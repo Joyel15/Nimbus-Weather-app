@@ -10,28 +10,27 @@
 
 <body>
   <main>
-    <div>
-      <!-- navbar code-->
-      <div class="navbar bg-base-100 shadow-sm flex justify-center">
-        <svg width="64px" height="64px" viewBox="0 0 36 36" xmlns="http://www.w3.org/2000/svg"
-          xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--twemoji"
-          preserveAspectRatio="xMidYMid meet" fill="#000000">
-          <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-          <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
-          <g id="SVGRepo_iconCarrier">
-            <path fill="#F4900C"
-              d="M13.917 36a.417.417 0 0 1-.371-.607L17 29h-5.078c-.174 0-.438-.031-.562-.297c-.114-.243-.057-.474.047-.703L15 19c.078-.067 6.902.393 7 .393a.417.417 0 0 1 .369.608l-3.817 6h5.032c.174 0 .329.108.391.271a.418.418 0 0 1-.119.461l-9.666 9.166a.422.422 0 0 1-.273.101z">
-            </path>
-            <path fill="#d4d4d4"
-              d="M28 4c-.825 0-1.62.125-2.369.357A6.498 6.498 0 0 0 19.5 0c-3.044 0-5.592 2.096-6.299 4.921A4.459 4.459 0 0 0 10.5 4A4.5 4.5 0 0 0 6 8.5c0 .604.123 1.178.339 1.704A4.98 4.98 0 0 0 5 10c-2.762 0-5 2.238-5 5s2.238 5 5 5h23a8 8 0 1 0 0-16z">
-            </path>
-          </g>
-        </svg>
-        <a class="btn btn-ghost text-2xl text-orange-500 ml-2">NIMBUS</a>
-      </div>
+    <!-- navbar code-->
+    <div class="navbar bg-base-100 shadow-sm flex justify-center">
+      <svg width="64px" height="64px" viewBox="0 0 36 36" xmlns="http://www.w3.org/2000/svg"
+        xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--twemoji"
+        preserveAspectRatio="xMidYMid meet" fill="#000000">
+        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+        <g id="SVGRepo_iconCarrier">
+          <path fill="#F4900C"
+            d="M13.917 36a.417.417 0 0 1-.371-.607L17 29h-5.078c-.174 0-.438-.031-.562-.297c-.114-.243-.057-.474.047-.703L15 19c.078-.067 6.902.393 7 .393a.417.417 0 0 1 .369.608l-3.817 6h5.032c.174 0 .329.108.391.271a.418.418 0 0 1-.119.461l-9.666 9.166a.422.422 0 0 1-.273.101z">
+          </path>
+          <path fill="#d4d4d4"
+            d="M28 4c-.825 0-1.62.125-2.369.357A6.498 6.498 0 0 0 19.5 0c-3.044 0-5.592 2.096-6.299 4.921A4.459 4.459 0 0 0 10.5 4A4.5 4.5 0 0 0 6 8.5c0 .604.123 1.178.339 1.704A4.98 4.98 0 0 0 5 10c-2.762 0-5 2.238-5 5s2.238 5 5 5h23a8 8 0 1 0 0-16z">
+          </path>
+        </g>
+      </svg>
+      <a class="btn btn-ghost text-2xl text-orange-500 ml-2">NIMBUS</a>
+    </div>
 
-      <!-- Searchbar code-->
-       <div class="flex justify-center mt-4">
+    <!-- Searchbar code-->
+    <div class="flex justify-center mt-4">
       <label class="input">
         <svg class="h-[1em] opacity-50" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
           <g stroke-linejoin="round" stroke-linecap="round" stroke-width="2.5" fill="none" stroke="currentColor">
@@ -41,9 +40,32 @@
         </svg>
         <input type="search" required placeholder="Search" />
       </label>
-       </div>
-
     </div>
+
+    <!-- Weather card -->
+    <div class="flex justify-center mt-4">
+      <div class="card bg-base-100 w-96 border-2 border-gray-500 shadow-lg">
+        <div class="flex justify-center pt-8">
+          <img src="../waether.png" alt="weather icon" class="w-24 h-24">
+        </div>
+        <div class="card-body items-center text-center">
+          <h2 class="text-5xl font-bold">22°C</h2>
+          <p class="text-xl font-medium">London, UK</p>
+          <div class="badge badge-soft badge-info mt-1">Partly Cloudy</div>
+          <div class="grid grid-cols-2 gap-3 mt-4 w-full">
+            <div class="stat bg-base-200 rounded-xl">
+              <div class="stat-title">Humidity</div>
+              <div class="stat-value text-2xl">80%</div>
+            </div>
+            <div class="stat bg-base-200 rounded-xl">
+              <div class="stat-title">Wind</div>
+              <div class="stat-value text-2xl">12 km/h</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  
   </main>
 </body>
 
