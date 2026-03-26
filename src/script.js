@@ -46,3 +46,9 @@ document.getElementById("visibility").innerHTML=Math.round(data.visibility/1000)
  console.log("Error occured:",error)
 } 
 }
+
+// Search button code
+searchBtn.addEventListener("click", () => {
+  checkWeather(searchInput.value);
+  searchInput.value=""
+})
