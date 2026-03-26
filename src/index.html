@@ -50,40 +50,41 @@
 
       <!-- Weather Icon -->
       <div class="flex justify-center mb-4">
-        <img src="https://cdn-icons-png.flaticon.com/512/869/869869.png" alt="Weather Icon"
+        <img id="weather-icon" src="icons/clear.png" alt="Weather Icon"
           class="w-20 h-20 sm:w-24 sm:h-24" />
       </div>
 
       <!-- Weather card main Details -->
-      <h2 class="text-2xl sm:text-3xl font-bold text-gray-800">Calicut</h2>
-      <p class="text-gray-500 text-sm sm:text-base mt-1">Wednesday, Sunny</p>
+      <h2 id="city" class="text-2xl sm:text-3xl font-bold text-gray-800">City</h2>
+      <p id="condition" class="text-gray-500 text-sm sm:text-base mt-1">Weather condition</p>
 
       <div class="mt-4">
-        <p class="text-4xl sm:text-5xl font-extrabold text-blue-600">32°C</p>
-        <p class="text-gray-600 mt-2">Feels like 35°C</p>
+        <p id="temp" class="text-4xl sm:text-5xl font-extrabold text-blue-600">32°C</p>
+        <p class="text-gray-600 mt-2">Feels like <span id="feels-like"></span></p>
       </div>
 
       <!-- Weather card extra Details -->
       <div class="grid grid-cols-2 gap-4 mt-6 text-sm sm:text-base">
         <div class="bg-blue-50 rounded-xl p-3">
-          <p class="text-gray-500">Humidity</p>
-          <p class="font-semibold text-gray-800">65%</p>
+          <p  class="text-gray-500">Humidity</p>
+          <p id="humidity" class="font-semibold text-gray-800"></p>
         </div>
         <div class="bg-blue-50 rounded-xl p-3">
           <p class="text-gray-500">Wind</p>
-          <p class="font-semibold text-gray-800">12 km/h</p>
+          <p id="wind" class="font-semibold text-gray-800"></p>
         </div>
         <div class="bg-blue-50 rounded-xl p-3">
           <p class="text-gray-500">Pressure</p>
-          <p class="font-semibold text-gray-800">1012 hPa</p>
+          <p id="pressure" class="font-semibold text-gray-800"></p>
         </div>
         <div class="bg-blue-50 rounded-xl p-3">
           <p class="text-gray-500">Visibility</p>
-          <p class="font-semibold text-gray-800">8 km</p>
+          <p id="visibility" class="font-semibold text-gray-800"></p>
         </div>
       </div>
     </div>
 </main>
 
+<script src="script.js"></script>
 </body>
 </html>
