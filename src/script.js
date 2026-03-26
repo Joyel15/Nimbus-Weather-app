@@ -19,3 +19,30 @@ const iconMap = {
   "Smoke": "icons/smoke.png",
 }
 
+// Weather function code
+async function checkWeather(city) {
+if(!city){
+  alert("Invalid input! Enter a City name");
+}
+
+try {
+  let response = await fetch(apiUrl + city + `&appid=${apiKey}`)
+  if(!response.ok){
+    throw new Error("Api Failed")
+  }
+
+  let data = await response.json();
+document.getElementById("city").innerHTML=data.name;
+document.getElementById("condition").innerHTML=data.weather[0].main;
+document.getElementById("weather-icon").src = iconMap[data.weather[0].main];
+document.getElementById("temp").innerHTML=Math.round(data.main.temp) + "°C";
+document.getElementById("feels-like").innerHTML=Math.round(data.main.feels_like) + "°C";
+document.getElementById("humidity").innerHTML=data.main.humidity + "%";
+document.getElementById("wind").innerHTML=Math.round(data.wind.speed) + " km/h";  
+document.getElementById("pressure").innerHTML=data.main.pressure + " hPa";  
+document.getElementById("visibility").innerHTML=Math.round(data.visibility/1000) + " km";  
+
+} catch(error){
+ console.log("Error occured:",error)
+} 
+}
