@@ -9,7 +9,7 @@ let searchBtn = document.getElementById("search-btn");
 const iconMap = {
   "Clear": "icons/clear.png",
   "Clouds": "icons/clouds.png",
-  "Rain": "icons/rain.png",
+  "Rain": "icons/Rain.png",
   "Snow": "icons/snow.png",
   "Thunderstorm": "icons/thunderstorm.png",
   "Drizzle": "icons/drizzle.png",
